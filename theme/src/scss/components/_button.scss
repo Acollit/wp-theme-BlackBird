@@ -1,0 +1,49 @@
+@use '../settings/vars' as *;
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $color-border;
+  padding: 15px 24px;
+  font-family: $font-family-base;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-bg;
+  background-color: $color-bg-dark;
+  cursor: pointer;
+  gap: 10px;
+
+  &::before,
+  &::after,
+  .btn__corner {
+    content: '';
+    position: absolute;
+    border: 2px solid $color-border;
+    width: 10px;
+    height: 10px;
+  }
+
+  &::before {
+    left: -2px;
+    top: -2px;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  &::after {
+    right: -2px;
+    top: -2px;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  &--outline {
+    color: $color-text;
+    background-color: transparent;
+  }
+}

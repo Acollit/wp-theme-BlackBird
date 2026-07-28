@@ -10,6 +10,8 @@
     "stylelint:fix": "stylelint \"src/scss/**/*.scss\" --fix"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
     "alpinejs": "^3.15.12"
   },
   "devDependencies": {
