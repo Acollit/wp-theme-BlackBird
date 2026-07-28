@@ -1,0 +1,23 @@
+{
+  "name": "starter-scss",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "stylelint": "stylelint \"src/scss/**/*.scss\"",
+    "stylelint:fix": "stylelint \"src/scss/**/*.scss\" --fix"
+  },
+  "dependencies": {
+    "alpinejs": "^3.15.12"
+  },
+  "devDependencies": {
+    "@kucrut/vite-for-wp": "latest",
+    "sass": "^1.83.1",
+    "stylelint": "^16.3.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-order": "^6.0.4",
+    "vite": "latest"
+  }
+}

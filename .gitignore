@@ -1,0 +1,12 @@
+/theme/node_modules
+/theme/dist
+/theme/vendor
+package-lock.json
+composer.lock
+.env
+
+# WordPress ядро при первом запуске копирует бандловые плагины (akismet, hello.php)
+# прямо в примонтированную plugins/ — трекаем только то, что добавляем сами
+/plugins/*
+!/plugins/.gitkeep
+!/plugins/README.md

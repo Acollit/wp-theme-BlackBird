@@ -1,0 +1,74 @@
+@use '../settings/vars' as *;
+
+.site-header {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 16px 24px;
+    max-width: $container-width;
+  }
+
+  &__logo {
+    font-weight: 700;
+    text-decoration: none;
+    color: $color-text;
+  }
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    width: 24px;
+    background: none;
+    cursor: pointer;
+    gap: 4px;
+
+    @media (width <= 640px) {
+      display: flex;
+    }
+  }
+
+  &__burger-line {
+    display: block;
+    height: 2px;
+    background-color: $color-text;
+  }
+
+  &__nav {
+    @media (width <= 640px) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      display: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      background-color: $color-bg;
+    }
+
+    &--open {
+      @media (width <= 640px) {
+        display: block;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+
+    @media (width <= 640px) {
+      flex-direction: column;
+      padding: 8px 24px;
+      gap: 0;
+    }
+  }
+}

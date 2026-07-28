@@ -1,0 +1,7 @@
+{
+    "name": "studio/starter-scss",
+    "description": "Starter WordPress theme with Vite integration (SCSS/BEM)",
+    "require": {
+        "kucrut/vite-for-wp": "^0.12"
+    }
+}

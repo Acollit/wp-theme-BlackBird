@@ -1,0 +1,19 @@
+@use '../settings/vars' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family-base;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

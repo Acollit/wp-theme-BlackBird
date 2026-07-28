@@ -1,0 +1,20 @@
+@use '../settings/vars' as *;
+
+.entry {
+  margin: 0 auto 32px;
+  padding: 0 24px;
+  max-width: $container-width;
+
+  &__title {
+    font-size: 1.5rem;
+
+    a {
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+
+  &__excerpt {
+    color: $color-text;
+  }
+}
